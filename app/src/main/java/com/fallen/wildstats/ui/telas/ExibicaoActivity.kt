@@ -17,8 +17,5 @@ class ExibicaoActivity : AppCompatActivity() {
         // Remove botão de voltar automático
         supportActionBar?.setDisplayHomeAsUpEnabled(false)
         supportActionBar?.setDisplayShowHomeEnabled(false)
-
-        // Se quiser colocar o hamburger mais tarde, você pode inicializar DrawerToggle aqui
-        // ex: val toggle = ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.open, R.string.close)
     }
 }
