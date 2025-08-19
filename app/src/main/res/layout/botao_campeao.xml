@@ -1,0 +1,31 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="8dp"
+    android:layout_margin="4dp">
+
+    <ImageView
+        android:id="@+id/imgCampeao"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/place_holder"
+        android:contentDescription="@string/app_name"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/nomeCampeao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Nome"
+        android:textColor="@color/dourado"
+        android:textSize="14sp" />
+</LinearLayout>

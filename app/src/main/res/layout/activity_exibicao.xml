@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- AppBar -->
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleY="5.5"
+        android:src="@drawable/background"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="296dp" />
+
+    <ImageView
+        android:id="@+id/capa_campeao"
+        android:layout_width="match_parent"
+        android:layout_height="186dp"
+        android:src="@drawable/capa_personagem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id="@+id/view_exib"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="65dp"
+        android:background="#80000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/capa_campeao" />
+
+    <ImageView
+        android:id="@+id/img_campeao"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/place_holder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/capa_campeao" />
+
+    <TextView
+        android:id="@+id/exib_nome_campeao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/campeao"
+        android:textColor="@color/dourado"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/img_campeao"
+        app:layout_constraintTop_toTopOf="@+id/view_exib" />
+
+    <TextView
+        android:id="@+id/exib_titulo_campeao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/titulo"
+        android:textColor="@color/cinza"
+        app:layout_constraintStart_toEndOf="@+id/img_campeao"
+        app:layout_constraintTop_toBottomOf="@+id/exib_nome_campeao" />
+
+    <TextView
+        android:id="@+id/rotas_exib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:text="@string/rota"
+        android:textColor="@color/cinza"
+        app:layout_constraintEnd_toEndOf="@+id/capa_campeao"
+        app:layout_constraintTop_toTopOf="@+id/view_exib" />
+
+    <ImageView
+        android:id="@+id/rota2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/ic_jungle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rota1"
+        app:tint="@color/cinza" />
+
+    <ImageView
+        android:id="@+id/rota1"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/ic_jungle"
+        app:layout_constraintEnd_toEndOf="@+id/view_exib"
+        app:layout_constraintTop_toBottomOf="@+id/rotas_exib"
+        app:tint="@color/cinza" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Função"
+        android:textColor="@color/dourado"
+        app:layout_constraintStart_toEndOf="@+id/img_campeao"
+        app:layout_constraintTop_toBottomOf="@+id/exib_titulo_campeao" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="411dp"
+        android:layout_height="1dp"
+        android:background="@color/dourado"
+        android:backgroundTint="@color/dourado"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/capa_campeao" />
+
+    <!-- Conteúdo principal -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

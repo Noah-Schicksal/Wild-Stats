@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Wild Stats</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_inicio">Inicio</string>
+    <string name="menu_campeões">Campeões</string>
+    <string name="menu_runas">Runas</string>
+    <string name="menu_tier">Tier List</string>
+    <string name="menu_login">Login</string>
+    <string name="menu_registro">Registrar</string>
+    <string name="string_sorteio_login">Mantenha-se logado e use frequentemente para concorrer a primiações mensalmente!</string>
+    <string name="string_sorteio_cadastro">Crie seu cadastro para concorrer a primiações mensalmente!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_web_client_id">230207773504-5rcsicisve5c21nb0bck1omfdamuheec.apps.googleusercontent.com</string>
+
+
+    <string name="string_email">E-mail</string>
+    <string name="login_google">Ou continue com o Google</string>
+    <string name="string_senha">Senha</string>
+    <string name="string_tela_cadastro">Ainda Não tem uma conta? registre-se!</string>
+
+    <string name="string_status">STATUS DO CAMPEÃO</string>
+    <string name="string_vida">VIDA</string>
+    <string name="string_dano">DANO</string>
+    <string name="string_atkspeed">VEL. ATK</string>
+    <string name="string_vidaregen">REGEN. VIDA</string>
+    <string name="string_mana">MANA</string>
+    <string name="string_manaregen">REGEN. MANA</string>
+    <string name="campeao">CAMPEÃO</string>
+    <string name="campeao_img">img</string>
+    <string name="titulo">Titulo do campeão</string>
+    <string name="rota">ROTAS</string>
+    <string name="dif">Dificuldade</string>
+</resources>

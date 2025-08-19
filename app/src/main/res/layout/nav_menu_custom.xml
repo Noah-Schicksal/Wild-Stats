@@ -1,0 +1,318 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:fillViewport="true"
+    android:isScrollContainer="false"
+    android:overScrollMode="never"
+    android:scrollY="0dp"
+    android:scrollbars="none"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-58dp">
+
+
+    <!-- Backgrounds fixos -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="216dp"
+
+        android:background="@drawable/background"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Item 1 - Início -->
+
+    <!-- Divisor abaixo do Início -->
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="596dp"
+        android:background="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <LinearLayout
+        android:id="@+id/item_inicio"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3">
+
+        <View
+            android:id="@+id/barra_lateral_inicio"
+            android:layout_width="7dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="143dp" />
+
+        <ImageView
+            android:id="@+id/icon_inicio"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="Ícone Início"
+            android:src="@drawable/baseline_grid_view_24"
+            tools:layout_editor_absoluteX="19dp"
+            tools:layout_editor_absoluteY="152dp" />
+
+        <TextView
+            android:id="@+id/tv_inicio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="12dp"
+            android:text="@string/menu_inicio"
+            android:textColor="@color/cinza"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="155dp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divisor2"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:background="#CCCCCC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_inicio" />
+
+    <!-- Item 2 - Campeões -->
+    <LinearLayout
+        android:id="@+id/item_campeoes"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divisor2">
+
+        <View
+            android:id="@+id/barra_lateral_campeoes"
+            android:layout_width="7dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="212dp" />
+
+        <ImageView
+            android:id="@+id/icon_campeoes"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="Ícone Campeões"
+            android:src="@drawable/baseline_campeoes_24"
+            tools:layout_editor_absoluteX="19dp"
+            tools:layout_editor_absoluteY="220dp" />
+
+        <TextView
+            android:id="@+id/tv_campeoes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="12dp"
+            android:text="@string/menu_campeões"
+            android:textColor="@color/cinza"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="224dp" />
+    </LinearLayout>
+
+    <!-- Divisor abaixo do Campeões -->
+    <View
+        android:id="@+id/divisor3"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:background="#CCCCCC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_campeoes" />
+
+    <!-- Item 3 - Tier List -->
+    <LinearLayout
+        android:id="@+id/item_tier_list"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divisor3">
+
+        <View
+            android:id="@+id/barra_lateral_tier_list"
+            android:layout_width="7dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="281dp" />
+
+        <ImageView
+            android:id="@+id/icon_tier_list"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="Ícone Tier List"
+            android:src="@drawable/tier_list_24"
+            tools:layout_editor_absoluteX="19dp"
+            tools:layout_editor_absoluteY="289dp" />
+
+        <TextView
+            android:id="@+id/tv_tier_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="12dp"
+            android:text="@string/menu_tier"
+            android:textColor="@color/cinza"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="293dp" />
+    </LinearLayout>
+
+    <!-- Divisor abaixo do Tier List -->
+    <View
+        android:id="@+id/divisor4"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:background="#CCCCCC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_tier_list" />
+
+    <!-- Item 4 - Runas -->
+    <LinearLayout
+        android:id="@+id/item_runas"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divisor4">
+
+        <View
+            android:id="@+id/barra_lateral_runas"
+            android:layout_width="7dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="345dp" />
+
+        <ImageView
+            android:id="@+id/icon_runas"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="Ícone Runas"
+            android:src="@drawable/runas_24"
+            tools:layout_editor_absoluteX="19dp"
+            tools:layout_editor_absoluteY="353dp" />
+
+        <TextView
+            android:id="@+id/tv_runas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="12dp"
+            android:text="@string/menu_runas"
+            android:textColor="@color/cinza"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="357dp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divisor5"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:background="#CCCCCC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_runas" />
+
+    <View
+        android:id="@+id/divisor6"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:background="#CCCCCC"
+        app:layout_constraintBottom_toTopOf="@+id/item_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/item_login"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="10dp"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <View
+            android:id="@+id/barra_lateral_login"
+            android:layout_width="7dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="345dp" />
+
+        <ImageView
+            android:id="@+id/icon_login"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="Ícone Login"
+            android:src="@drawable/login_24"
+            tools:layout_editor_absoluteX="19dp"
+            tools:layout_editor_absoluteY="353dp" />
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="12dp"
+            android:text="@string/menu_login"
+            android:textColor="@color/cinza"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="357dp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

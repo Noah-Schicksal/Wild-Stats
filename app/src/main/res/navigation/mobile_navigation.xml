@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    android:scrollbars="none"
+    android:overScrollMode="never"
+    app:startDestination="@+id/nav_inicio">
+
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="com.fallen.wildstats.ui.inicio.inicioFragment"
+        android:label="@string/menu_inicio"
+        tools:layout="@layout/fragment_inicio" />
+
+    <fragment
+        android:id="@+id/nav_campeoes"
+        android:name="com.fallen.wildstats.ui.campeoes.CampeoesFragment"
+        android:label="@string/menu_campeões"
+        tools:layout="@layout/fragment_campeoes" />
+
+    <fragment
+        android:id="@+id/nav_tier_list"
+        android:name="com.fallen.wildstats.ui.tier_list.TierFragment"
+        android:label="@string/menu_tier"
+        tools:layout="@layout/fragment_tier" />
+
+    <fragment
+        android:id="@+id/nav_runas"
+        android:name="com.fallen.wildstats.ui.runas.RunasFragment"
+        android:label="@string/menu_runas"
+        tools:layout="@layout/fragment_runas" />
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.fallen.wildstats.ui.login.LoginFragment"
+        android:label="@string/menu_login"
+        tools:layout="@layout/fragment_login">
+
+        <!-- Action para ir do Login para o Registro -->
+        <action
+            android:id="@+id/action_loginFragment_to_registroFragment"
+            app:destination="@id/nav_registro" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_perfil"
+        android:name="com.fallen.wildstats.ui.telas.PerfilFragment"
+        android:label="Perfil"
+        tools:layout="@layout/fragment_perfil" />
+
+    <fragment
+        android:id="@+id/nav_registro"
+        android:name="com.fallen.wildstats.ui.logreg.RegistroFragment"
+        android:label="Cadastro"
+        tools:layout="@layout/fragment_registro" />
+
+
+</navigation>
